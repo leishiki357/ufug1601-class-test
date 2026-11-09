@@ -1,0 +1,14 @@
+def print_christmas_tree(rows):
+    # 打印树的主体
+    for i in range(rows):
+        space = rows - 1 - i
+        star = 2 * i + 1
+        print(" " * space + "*" * star)
+    # 打印树干，两行 |
+    trunk_space = rows - 1
+    print(" " * trunk_space + "|")
+    print(" " * trunk_space + "|")
+
+
+# 测试调用
+print_christmas_tree(5)

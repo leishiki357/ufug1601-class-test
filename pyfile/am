@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+    def __str__(self):
+        return f"Student Name: {self.name}, Score: {self.score}"
+    def test(self):
+        if self.score >= 60:
+            return "Pass"
+        else:
+            return "Fail"
+Alice = Student("Alice", 75)
+Bob = Student("Bob", 50)
+print(Alice)
+print(Alice.test())
+print(Bob)
+print(Bob.test()) 
